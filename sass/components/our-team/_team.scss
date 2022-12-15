@@ -1,0 +1,37 @@
+.team-container-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: var(--main-bgc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 90px) / 4);
+  padding-bottom: 30px;
+}
+
+.team {
+  background-color: var(--third-bgc);
+}
+
+.team-member-name {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.team-member-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+

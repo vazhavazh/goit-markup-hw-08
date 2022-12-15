@@ -1,0 +1,21 @@
+:root {
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --main-bgc: #ffffff;
+  --secondary-text-color: #212121;
+  --secondary-bgc: #2f303a;
+
+  --third-bgc: #f5f4fa;
+  --footer-contact: rgba(255, 255, 255, 0.6);
+  --font-weight-bold: 700;
+  --font-size-main: 14px;
+  --icon-fill: #afb1b8;
+  --hover-effect: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  background-color: var(--main-bgc);
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+}
+

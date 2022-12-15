@@ -1,0 +1,16 @@
+.contact-footer {
+  color: var(--footer-contact);
+  text-decoration: none;
+
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+
+  transition: color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

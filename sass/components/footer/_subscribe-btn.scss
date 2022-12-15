@@ -1,0 +1,39 @@
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: var(--font-weight-bold);
+  line-height: calc(30 / 16);
+  color: var(--main-bgc);
+  letter-spacing: 0.06em;
+
+  border-color: transparent;
+
+  transition: box-shadow var(--hover-effect);
+
+  & span {
+    display: flex;
+
+    fill: var(--main-bgc);
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-bgc);
+    box-shadow: 0px 4px 4px rgba(226, 198, 198, 0.15);
+    cursor: pointer;
+  }
+}

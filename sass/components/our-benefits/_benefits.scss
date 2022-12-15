@@ -1,0 +1,68 @@
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+
+.benefits-section {
+  padding-bottom: 0px;
+}
+.benefits__list {
+  display: flex;
+  gap: 30px;
+}
+
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits__link {
+  width: 270px;
+  height: 120px;
+  background-color: var(--third-bgc);
+
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits__sub-title {
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-main);
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.benefits__description {
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* utility for hiding elements */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}

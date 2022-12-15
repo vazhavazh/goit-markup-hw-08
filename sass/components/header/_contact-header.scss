@@ -1,0 +1,50 @@
+.contact-header__list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.contact-header__link {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--font-size-main);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contact-header__link-mail-icon {
+  fill: var(--main-text-color);
+  transition: fill var(--hover-effect);
+  .contact-header__link:hover & {
+  fill: var(--accent-color);
+}
+.contact-header__link:focus & {
+  fill: var(--accent-color);
+}
+}
+
+
+.contact-header__link-tel-icon {
+  fill: var(--main-text-color);
+  transition: fill var(--hover-effect);
+
+  .contact-header__link:hover & {
+  fill: var(--accent-color);
+}
+.contact-header__link:focus & {
+  fill: var(--accent-color);
+}
+
+}

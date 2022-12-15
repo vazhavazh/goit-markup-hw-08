@@ -1,0 +1,154 @@
+.backdrope {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrope.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+.modal {
+  position: absolute;
+  padding: 40px 39px 40px 41px;
+  margin-bottom: 12px;
+
+  width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+
+  background-color: var(--main-bgc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 200ms linear;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.modal-title {
+  margin-bottom: 30px;
+
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  padding-left: 42px;
+
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  outline: transparent;
+
+  transition: border-color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.modal-label {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  cursor: pointer;
+}
+
+.icon-modal {
+  position: absolute;
+  left: 12px;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  transition: fill var(--hover-effect);
+
+  .modal-input:hover + &,
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.modal-text {
+  padding: 12px 16px;
+
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+
+  width: 100%;
+  height: 120px;
+
+  border-radius: 4px;
+
+  outline: transparent;
+  resize: none;
+
+  transition: border-color var(--hover-effect);
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+
+

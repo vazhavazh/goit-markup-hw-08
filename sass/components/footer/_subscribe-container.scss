@@ -1,0 +1,25 @@
+.subscribe-wrap {
+  display: flex;
+}
+
+.subscribe-input {
+  padding-left: 16px;
+
+  min-width: 358px;
+  height: 50px;
+  outline: transparent;
+  cursor: pointer;
+
+  color: var(--main-text-color);
+
+  background-color: var(--secondary-bgc);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}

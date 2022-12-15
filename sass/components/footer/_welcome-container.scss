@@ -1,0 +1,33 @@
+.welcome-title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-main);
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bgc);
+
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.social-link-icon-footer {
+  fill: var(--main-bgc);
+}
+
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
