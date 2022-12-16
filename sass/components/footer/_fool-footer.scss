@@ -1,0 +1,197 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--secondary-bgc);
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
+  gap: 60px;
+
+  justify-content: space-around;
+  align-items: baseline;
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+}
+
+.address-studio {
+  display: inline-block;
+  min-width: 209px;
+  color: var(--main-bgc);
+  text-decoration: none;
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.adress-nav {
+  width: 100%;
+  text-align: center;
+
+  @include tablet {
+    width: auto;
+  }
+
+  @include desktop {
+    width: auto;
+  }
+}
+
+.adress-nav .adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.logo-footer {
+  width: 100%;
+
+  display: block;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: var(--font-weight-bold);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+.logo-footer--back {
+  color: var(--main-bgc);
+}
+
+.contact-footer {
+  color: var(--footer-contact);
+  text-decoration: none;
+  font-size: var(--font-size-main);
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  transition: color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.welcome-container {
+  width: 100%;
+  text-align: center;
+
+  @include tablet {
+    width: auto;
+  }
+
+  @include desktop {
+    width: auto;
+  }
+}
+
+.welcome-title {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-main);
+  line-height: 1.1428571429;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bgc);
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+
+.social-link-icon-footer {
+  fill: var(--main-bgc);
+}
+
+.social-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--hover-effect);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.subscribe-container {
+  text-align: center;
+  width: 100%;
+}
+
+.subscribe-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+
+  align-items: center;
+  gap: 20px;
+
+  @include desktop {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
+.subscribe-input {
+  padding-left: 16px;
+
+  width: 100%;
+  min-height: 50px;
+
+  outline: transparent;
+  cursor: pointer;
+  color: var(--main-text-color);
+  background-color: var(--secondary-bgc);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color var(--hover-effect);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  padding: 10px 52px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.875;
+  color: var(--main-bgc);
+  letter-spacing: 0.06em;
+  border-color: transparent;
+  transition: box-shadow var(--hover-effect);
+
+  & span {
+    display: flex;
+    fill: var(--main-bgc);
+    margin-left: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-bgc);
+    box-shadow: 0px 4px 4px rgba(226, 198, 198, 0.15);
+    cursor: pointer;
+  }
+}

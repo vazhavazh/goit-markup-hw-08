@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./utils/resets";
 @import "./utils/base-containers";
 
@@ -19,12 +20,9 @@
 
 @import "./components/old-clients/client";
 
-@import "./components/footer/footer";
-@import "./components/footer/footer-logo";
-@import "./components/footer/contact-footer";
-@import "./components/footer/welcome-container";
-@import "./components/footer/subscribe-container";
-@import "./components/footer/subscribe-btn";
+
+@import "./components/footer/fool-footer";
+
 
 @import "./components/portfolio/portfolio";
 @import "./components/portfolio/filter-button";

@@ -1,26 +1,44 @@
 .hero-section {
+  width: 100%;
+  
+  
   text-align: center;
-  display: flex;
+  // display: flex;
 }
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  min-width: 1600px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // min-width: 1600px;
+  padding: 118px ;
+  margin: 0 auto;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/img-overlay.jpg);
 
+    background-position: center;
+
+    
+
   &__title {
+    max-width: 320px;
+    
     color: var(--main-bgc);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    // font-size: 44px;
+    font-size: 26px;
+    line-height: calc(42/26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    max-width: 696px;
+    
+    
+    // max-width: 696px;
+
     margin: 0 auto;
     margin-bottom: 30px;
   }
 }
+
+

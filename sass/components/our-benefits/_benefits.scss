@@ -11,30 +11,60 @@
   margin: -1px;
 }
 
-
 .benefits-section {
-  padding-bottom: 0px;
+
+  @include tablet {
+    padding-bottom: 0px;
+  }
+
+  
+  @include desktop {
+    padding-bottom: 0px;
+  }
+
+
 }
 .benefits__list {
   display: flex;
+
+  flex-wrap: wrap;
+
   gap: 30px;
 }
 
-
 .benefits__item {
-  display: flex;
-  flex-direction: column;
+
+    @include tablet {
+    @include calc(2, 30px);
+  }
+
+  @include desktop {
+    @include calc(4, 30px);
+  }
 }
 
 .benefits__link {
-  width: 270px;
-  height: 120px;
   background-color: var(--third-bgc);
 
-  margin-bottom: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+
+  max-width: 100%;
+
+  // padding: 25px 190px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  margin-bottom: 30px;
+
+  &-icon {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+
+ 
 }
 
 .benefits__sub-title {
@@ -44,6 +74,9 @@
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
+  text-align: center;
+
   margin-bottom: 10px;
 }
 
@@ -51,18 +84,4 @@
   font-size: var(--font-size-main);
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
-
-/* utility for hiding elements */
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }

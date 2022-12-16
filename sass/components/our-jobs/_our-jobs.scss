@@ -1,3 +1,11 @@
+.job__section {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
 .jobs-container-list {
   display: flex;
 

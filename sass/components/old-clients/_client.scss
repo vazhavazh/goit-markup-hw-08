@@ -1,22 +1,28 @@
 .client-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .client-list-item {
-  width: 170px;
-  height: 92px;
-  display: flex;
+  @include calc(2, 30px);
+
+  @include tablet {
+    @include calc(3, 30px);
+  }
+
+  @include desktop {
+    @include calc(6, 30px);
+  }
 }
 
 .client-link {
   width: 100%;
-  height: 100%;
+  display: block;
+
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   transition: border var(--hover-effect);
 
@@ -27,15 +33,14 @@
 }
 
 .client-icon {
+  width: 100%;
+
   fill: var(--icon-fill);
 
   transition: fill var(--hover-effect);
 
   .client-link:hover &,
-.client-link:focus & {
-  fill: var(--accent-color);
+  .client-link:focus & {
+    fill: var(--accent-color);
+  }
 }
-
-
-}
-
