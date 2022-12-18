@@ -16,6 +16,7 @@
 
   @include desktop {
     flex-wrap: nowrap;
+    gap: 0px;
   }
 }
 
@@ -40,6 +41,7 @@
 
   @include desktop {
     width: auto;
+    margin-right: 70px;
   }
 }
 
@@ -88,7 +90,8 @@
   }
 
   @include desktop {
-    width: auto;
+    margin-right: 93px;
+    text-align: left;
   }
 }
 
@@ -126,6 +129,10 @@
 .subscribe-container {
   text-align: center;
   width: 100%;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .subscribe-wrap {
@@ -138,6 +145,7 @@
   gap: 20px;
 
   @include desktop {
+    gap: 0px;
     flex-wrap: nowrap;
     flex-direction: row;
   }
@@ -145,13 +153,15 @@
 
 .subscribe-input {
   padding-left: 16px;
-  
- 
+
   @include tablet {
     min-width: 450px;
   }
- 
-  
+
+  @include desktop {
+    min-width: 358px;
+  }
+
   min-height: 50px;
 
   outline: transparent;
