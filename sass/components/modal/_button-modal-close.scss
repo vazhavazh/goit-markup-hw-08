@@ -20,11 +20,9 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
-
   }
 }
 
 .icon-close-black {
-  fill: 000000;
+  fill: var(--secondary-text-color);
 }
-

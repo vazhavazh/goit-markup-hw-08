@@ -1,9 +1,10 @@
-.main-nav {
-  display: none;
-}
-
 .main-nav__list {
-  display: flex;
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+
 }
 
 .main-nav__link {
@@ -29,7 +30,9 @@
 }
 
 .main-nav__item:not(:last-child) {
-  margin-right: 40px;
+
+  margin-right: 50px;
+
 }
 
 .current::after {
@@ -38,7 +41,7 @@
   display: none;
 
   position: absolute;
-  
+
   bottom: -1px;
   content: "";
   width: 100%;

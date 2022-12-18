@@ -1,38 +1,78 @@
 .hero-section {
-  width: 100%;
-
   text-align: center;
-  // display: flex;
-}
-.hero {
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // min-width: 1600px;
-  padding: 118px 60px;
-  margin: 0 auto;
+  display: block;
 
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../image/img-overlay.jpg);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hero {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  padding: 118px 60px;
+
+  background-image: var(--main-bg-gradient), url(../image/img-overlay-mob.jpg);
 
   background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include retina {
+    background-image: var(--main-bg-gradient),
+      url(../image/img-overlay-mob-2x.jpg);
+  }
+
+  @include tablet {
+    background-image: var(--main-bg-gradient),
+      url(../image/img-overlay-tablet.jpg);
+       @include retina {
+    background-image: var(--main-bg-gradient),
+      url(../image/img-overlay-tablet-2x.jpg);
+  }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: var(--main-bg-gradient),
+      url(../image/img-overlay-desktop.jpg);
+       @include retina {
+    background-image: var(--main-bg-gradient),
+      url(../image/img-overlay-desktop-2x.jpg);
+  }
+  }
+
+  .hero-section & {
+    @include mobile {
+      min-width: 320px;
+    }
+
+    @include tablet {
+      min-width: 768px;
+    }
+
+    @include desktop {
+      min-width: 1200px;
+    }
+  }
 
   &__title {
     max-width: 320px;
 
     color: var(--main-bgc);
     font-weight: 900;
-    // font-size: 44px;
     font-size: 26px;
     line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    // max-width: 696px;
-
     margin: 0 auto;
     margin-bottom: 30px;
+
+    @include desktop {
+      max-width: 696px;
+      font-size: 44px;
+    }
   }
 }
