@@ -23,6 +23,8 @@ header {
 
   & > .container {
     height: 100%;
+    padding-top: 15px;
+    padding-bottom: 48px;
 
     display: flex;
     flex-direction: column;
@@ -87,7 +89,7 @@ header {
 
 .mob-contact__link {
   display: block;
-  &--tel {
+  &-tel {
     min-width: 296px;
     max-height: 40px;
 
@@ -105,23 +107,21 @@ header {
     }
   }
 
-  &--mail {
+  &-mail {
     text-decoration: none;
-    font-family: "Roboto";
-    font-style: normal;
+
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: calc(28 / 24);
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--main-text-color);
   }
 }
 .mob-soc__list {
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 33px;
 }
 .mob-soc__item {
   display: flex;
