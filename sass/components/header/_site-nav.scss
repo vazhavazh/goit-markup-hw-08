@@ -1,5 +1,6 @@
-.main-nav { display: none;}
-
+.main-nav {
+  display: none;
+}
 
 .main-nav__list {
   display: flex;
@@ -32,8 +33,12 @@
 }
 
 .current::after {
-  position: absolute;
   display: block;
+
+  display: none;
+
+  position: absolute;
+  
   bottom: -1px;
   content: "";
   width: 100%;
