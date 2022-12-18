@@ -203,7 +203,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 48px;
+  padding-bottom: 33px;
 }
 
 .mob-soc__item {
