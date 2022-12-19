@@ -18,9 +18,11 @@
 }
 
 .client-link {
-  width: 100%;
-  display: block;
+  display: flex;
 
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
 
@@ -33,7 +35,6 @@
 }
 
 .client-icon {
-  width: 100%;
   height: 100%;
 
   fill: var(--icon-fill);

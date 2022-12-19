@@ -340,6 +340,11 @@ header > .container {
   height: 4px;
   background-color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .current::after {
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .current::after {
     display: block;
@@ -569,6 +574,11 @@ header > .container {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__sub-title {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .benefits__sub-title {
     text-align: left;
@@ -579,6 +589,17 @@ header > .container {
   font-size: var(--font-size-main);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .benefits__description {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__description {
+    text-align: left;
+  }
 }
 
 .job__section {
@@ -723,8 +744,10 @@ header > .container {
 }
 
 .client-link {
-  width: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid var(--icon-fill);
   border-radius: 4px;
   transition: border var(--hover-effect);
@@ -734,7 +757,6 @@ header > .container {
 }
 
 .client-icon {
-  width: 100%;
   height: 100%;
   fill: var(--icon-fill);
   transition: fill var(--hover-effect);
@@ -751,7 +773,6 @@ header > .container {
 
 .footer-container {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   gap: 60px;
   justify-content: space-around;
@@ -883,11 +904,16 @@ header > .container {
 
 .subscribe-wrap {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
   align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-wrap {
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscribe-wrap {
@@ -899,7 +925,8 @@ header > .container {
 
 .subscribe-input {
   padding-left: 16px;
-  width: 100%;
+  display: block;
+  min-width: 100%;
   min-height: 50px;
   outline: transparent;
   cursor: pointer;
@@ -909,6 +936,11 @@ header > .container {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border-color var(--hover-effect);
+}
+@media screen and (min-width: 480px) {
+  .subscribe-input {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .subscribe-input {
@@ -1133,25 +1165,55 @@ header > .container {
   color: var(--secondary-text-color);
 }
 
+@media screen and (min-width: 480px) {
+  .input-container {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input-container {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .input-container {
     margin-bottom: 10px;
   }
 }
 
+@media screen and (min-width: 480px) {
+  .modal-form > .comments {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal-form > .comments {
+    margin-bottom: 20px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-form > .comments {
     margin-bottom: 20px;
   }
 }
 
+@media screen and (min-width: 480px) {
+  .checkbox-text {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .checkbox-text {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .checkbox-text {
     margin-bottom: 30px;
   }
 }
 
-.main-nav__item:not(:last-child) .input-wrap {
+.input-wrap {
   position: relative;
 }
 
@@ -1231,7 +1293,8 @@ header > .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-color: transparent;
+  background-color: var(--main-bgc);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .button-modal-close:hover, .button-modal-close:focus {
   fill: var(--accent-color);

@@ -6,7 +6,7 @@
 
 .footer-container {
   display: flex;
-  width: 100%;
+  
   flex-wrap: wrap;
 
   gap: 60px;
@@ -138,14 +138,22 @@
 
 .subscribe-wrap {
   display: flex;
-  flex-wrap: wrap;
+  
   flex-direction: column;
   width: 100%;
 
   align-items: center;
   gap: 20px;
 
+
+   @include tablet {
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
   @include desktop {
+    
     gap: 0px;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -154,12 +162,16 @@
 
 .subscribe-input {
   padding-left: 16px;
+    display: block;
+    min-width: 100%;
+   @include mobile {
+    max-width: 450px;
+  }
 
-  width: 100%;
-
-  @include tablet {
+    @include tablet {
     min-width: 450px;
   }
+  
 
   @include desktop {
     min-width: 358px;

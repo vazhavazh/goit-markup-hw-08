@@ -4,7 +4,6 @@
   @include tablet {
     display: flex;
   }
-
 }
 
 .main-nav__link {
@@ -30,14 +29,10 @@
 }
 
 .main-nav__item:not(:last-child) {
-
   margin-right: 50px;
-
 }
 
 .current::after {
-  
-
   display: none;
 
   position: absolute;
@@ -48,8 +43,11 @@
   height: 4px;
   background-color: var(--accent-color);
 
-  @include desktop {
+  @include tablet {
     display: block;
   }
 
+  @include desktop {
+    display: block;
+  }
 }
