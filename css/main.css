@@ -125,11 +125,16 @@ header > .container {
 .mob-menu > .container {
   height: 100%;
   padding-top: 15px;
-  padding-bottom: 48px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: scroll;
+}
+@media screen and (min-width: 480px) {
+  .mob-menu > .container {
+    padding-bottom: 48px;
+  }
 }
 
 .mob-close-btn {
