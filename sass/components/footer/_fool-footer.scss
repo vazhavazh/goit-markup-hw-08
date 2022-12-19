@@ -42,6 +42,7 @@
   @include desktop {
     width: auto;
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -153,6 +154,8 @@
 
 .subscribe-input {
   padding-left: 16px;
+
+  width: 100%;
 
   @include tablet {
     min-width: 450px;

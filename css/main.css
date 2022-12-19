@@ -105,8 +105,6 @@ header {
 header > .container {
   display: flex;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   header > .container {
@@ -155,6 +153,10 @@ header > .container {
 }
 .mob-close-btn:hover .menu-close-icon, .mob-close-btn:focus .menu-close-icon {
   fill: var(--accent-color);
+}
+
+.mob-nav__item:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mob-nav__link {
@@ -210,7 +212,7 @@ header > .container {
 .mob-soc__list {
   list-style: none;
   display: flex;
-  min-width: 357px;
+  flex-wrap: wrap;
 }
 
 .mob-soc__item {
@@ -330,7 +332,6 @@ header > .container {
 }
 
 .current::after {
-  display: block;
   display: none;
   position: absolute;
   bottom: -1px;
@@ -338,6 +339,11 @@ header > .container {
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .current::after {
+    display: block;
+  }
 }
 
 .contact-header__list {
@@ -349,6 +355,7 @@ header > .container {
     flex-direction: column;
     gap: 10px;
     margin-left: auto;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -401,13 +408,10 @@ header > .container {
 .hero-section {
   text-align: center;
   display: block;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .hero {
-  padding-left: 15px;
-  padding-right: 15px;
+  text-align: center;
   padding: 118px 60px;
   background-image: var(--main-bg-gradient), url(../image/img-overlay-mob.jpg);
   background-position: center;
@@ -564,6 +568,11 @@ header > .container {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits__sub-title {
+    text-align: left;
+  }
 }
 
 .benefits__description {
@@ -726,6 +735,7 @@ header > .container {
 
 .client-icon {
   width: 100%;
+  height: 100%;
   fill: var(--icon-fill);
   transition: fill var(--hover-effect);
 }
@@ -778,6 +788,7 @@ header > .container {
   .adress-nav {
     width: auto;
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -888,6 +899,7 @@ header > .container {
 
 .subscribe-input {
   padding-left: 16px;
+  width: 100%;
   min-height: 50px;
   outline: transparent;
   cursor: pointer;
@@ -1112,7 +1124,7 @@ header > .container {
 }
 
 .modal-title {
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: var(--font-weight-bold);
   font-size: 20px;
   line-height: 1.15;
@@ -1121,11 +1133,25 @@ header > .container {
   color: var(--secondary-text-color);
 }
 
-.input-container {
-  margin-bottom: 10px;
+@media screen and (min-width: 1200px) {
+  .input-container {
+    margin-bottom: 10px;
+  }
 }
 
-.input-wrap {
+@media screen and (min-width: 1200px) {
+  .modal-form > .comments {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    margin-bottom: 30px;
+  }
+}
+
+.main-nav__item:not(:last-child) .input-wrap {
   position: relative;
 }
 
@@ -1177,6 +1203,7 @@ header > .container {
   border-radius: 4px;
   outline: transparent;
   resize: none;
+  border-color: rgba(33, 33, 33, 0.2);
   transition: border-color var(--hover-effect);
 }
 .modal-text::-moz-placeholder {
@@ -1205,7 +1232,6 @@ header > .container {
   align-items: center;
   justify-content: center;
   border-color: transparent;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 .button-modal-close:hover, .button-modal-close:focus {
   fill: var(--accent-color);
