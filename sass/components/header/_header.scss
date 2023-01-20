@@ -81,8 +81,17 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
+    
   }
+  
 }
+
+// .mob-nav__item.open-key {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+  
+// }
 
 .mob-contact__list {
   display: flex;
